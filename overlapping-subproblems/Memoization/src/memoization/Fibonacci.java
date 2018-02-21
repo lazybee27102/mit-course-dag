@@ -35,7 +35,7 @@ public class Fibonacci {
     public int fib(int n) {
         if (!lookupNumbers.containsKey(n)) {
             if (n <= 1) {
-                lookupNumbers.put(n, 1);
+                lookupNumbers.put(n, n);
             } else {
                 lookupNumbers.put(n, fib(n - 1) + fib(n - 2));
             }
